@@ -11,12 +11,11 @@ import pandas as pd
 
 # initializes the screen
 WHITE = (250, 250, 250)
-width, height = 950, 725
+width, height = 2000, 1000
 pygame.init()
 screen = pygame.display.set_mode((width, height))
 screen.fill(WHITE)
-filename = 'seedlings_2013.csv'
-# filename = 'seedlings_2009.csv'
+filename = 'seedlings_2008.csv'
 # draw_states()
 
 
@@ -194,32 +193,32 @@ while True:
     screen.blit(title_background, (screen.get_width()/4, 0))
     pygame.display.flip()
 
-    # updates the map depending on the key pressed
-    # pressed = pygame.key.get_pressed()
-    # if pressed[pygame.K_d]:
-    #     filename = 'seedlings_2008.csv'
-    #     draw_states()
-    # elif pressed[pygame.K_f]:
-    #     filename = 'seedlings_2009.csv'
-    #     draw_states()
-    # elif pressed[pygame.K_g]:
-    #     filename = 'seedlings_2010.csv'
-    #     draw_states()
-    # elif pressed[pygame.K_h]:
-    #     filename = 'seedlings_2011.csv'
-    #     draw_states()
-    # elif pressed[pygame.K_j]:
-    #     filename = 'seedlings_2012.csv'
-    #     draw_states()
-    # elif pressed[pygame.K_k]:
-    #     filename = 'seedlings_2013.csv'
-    #     draw_states()
-    # else:
-    #     filename = 'seedlings_2008.csv' 
-    #     draw_states()
+    #updates the map depending on the key pressed
+    pressed = pygame.key.get_pressed()
+    if pressed[pygame.K_d]:
+        filename = 'seedlings_2008.csv'
+        draw_states()
+    elif pressed[pygame.K_f]:
+        filename = 'seedlings_2009.csv'
+        draw_states()
+    elif pressed[pygame.K_g]:
+        filename = 'seedlings_2010.csv'
+        draw_states()
+    elif pressed[pygame.K_h]:
+        filename = 'seedlings_2011.csv'
+        draw_states()
+    elif pressed[pygame.K_j]:
+        filename = 'seedlings_2012.csv'
+        draw_states()
+    elif pressed[pygame.K_k]:
+        filename = 'seedlings_2013.csv'
+        draw_states()
+    else:
+        filename = 'seedlings_2008.csv' 
+        draw_states()
 
-    # updates the lists
-    # seedlings_list = update_lists()[0]
-    # state_list = update_lists()[1]
+    #updates the lists
+    seedlings_list = update_lists()[0]
+    state_list = update_lists()[1]
 
 
