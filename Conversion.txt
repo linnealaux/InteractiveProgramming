@@ -1,0 +1,17 @@
+Conversion Report:
+Created by DWG TrueView DWG Convert Monday, June 9, 2014, 4:52 PM.
+
+Conversion Summary
+------------------
+Conversion File Format:  AutoCAD 2010/LT 2010 Drawing Format
+Conversion package type: In-place (overwrite files)
+Converted DWG files:     0
+Recovered DWG files:     0
+Conversion errors:       1
+
+
+Conversion Errors
+-----------------
+Educational drawing files:
+The following files were created or edited with an Educational version of AutoCAD and could not be converted:
+C:\Users\Rocco\Documents\top plate.dwg
